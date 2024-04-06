@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Registro de Robo</title>
+        <link href="{% static 'styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'styles.css' %}" rel="stylesheet" />
+        <script src="{% static 'styles.css' %}" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+<body class="sb-nav-fixed" style="background-image: url('https://www.deutschland.de/sites/default/files/media/image/EuroHPC%20entwickelt%20Supercomputer%20f%C3%BCr%20Europa.jpg'); background-size: cover;">
+        
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-nuevo">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="http://127.0.0.1:8000/login/">Autotracker <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-current-location"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 12m-8 0a8 8 0 1 0 16 0a8 8 0 1 0 -16 0" /><path d="M12 2l0 2" /><path d="M12 20l0 2" /><path d="M20 12l2 0" /><path d="M2 12l2 0" /></svg> </a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+           
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">menu</div>
+            
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                               Registros del robo..
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Registro de robo
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                        <a class="nav-link" href="http://127.0.0.1:8000/Datos_de_auto/">
+                                        Registro Datos de Auto
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    </a>
+                                    <a class="nav-link" href="http://127.0.0.1:8000/Registro_persona/">
+                                    Registro Datos de persona
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                    
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">consultas</div>
+                            <a class="nav-link" href="http://127.0.0.1:8000/consulta/">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Consulta Registro de Robo
+                            </a>
+                            <a class="nav-link" href="http://127.0.0.1:8000/monitoreo/">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Monitoreo
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Usuarios</div>
+                            <a class="nav-link" href="http://127.0.0.1:8000/login/">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Login
+                            </a>
+                            <a class="nav-link" href="http://127.0.0.1:8000/Registros_usuarios/">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Registro de Usuarios
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4"><p style="color: rgb(0, 255, 221);">Registro del Robo</p></h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Registro del Robo</li>
+                        </ol>
+                     
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                           
+
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">ID
+                                    </label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese el dato correcto">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">numero de serie del auto</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">matricula</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+                                  
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Fecha Robo</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Hora robo </label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">latitud</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">longitud</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">tipo de robo </label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">status del reporte</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">fecha registro</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el dato correcto">
+                                  </div>
+
+                            
+                                    <button type="button" class="btn btn-success">Continuar <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-device-floppy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h10l4 4v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2" /><path d="M12 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M14 4l0 4l-6 0l0 -4" /></svg></button>
+                                    <button type="button" class="btn btn-warning">Regresar <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg></button>
+                                   
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                    
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+8</html>
